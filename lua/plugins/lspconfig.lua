@@ -19,5 +19,10 @@ return {
 
       lspconfig[server].setup(config)
     end
+
+    vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
   end
 }

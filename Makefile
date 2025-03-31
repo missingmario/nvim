@@ -7,8 +7,8 @@ default:
 	echo "- make clean"
 
 link:
-	rm ~/.config/nvim
 	ln -s $(shell pwd) ~/.config/nvim
 
 clean:
+	rm ~/.config/nvim
 	rm -rf ~/.local/share/nvim ~/.local/state/nvim
